@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us - Vima Sneha</title>
+    <meta name="description" content="Get in touch with Vima Sneha for counselling appointments and insurance consultations in Bantwal & Mangaluru."/>
+    <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="assets/css/layout-shared.css?v=20260420-2" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: { DEFAULT: '#B47FA6', light: '#C9A0BB', dark: '#7A4F72' },
+              secondary: { DEFAULT: '#D4A853', light: '#F0D08A', dark: '#A6823D' },
+              surface: { DEFAULT: '#FAF5F9', dark: '#141214' }
+            },
+            fontFamily: { sans: ['"Plus Jakarta Sans"', 'Manrope', 'sans-serif'] },
+            borderRadius: { '2xl': '1.5rem', '3xl': '2rem', '4xl': '3rem' }
+          }
+        }
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        body { @apply bg-surface text-slate-800 font-sans selection:bg-primary/30 selection:text-primary-dark overflow-x-hidden; }
+      }
+      @layer components {
+        .glass { @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl; }
+        .btn-premium { @apply relative overflow-hidden px-10 py-5 rounded-2xl font-extrabold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl active:scale-95 flex items-center justify-center gap-2 text-lg; }
+        .btn-primary-premium { @apply btn-premium bg-gradient-to-r from-primary to-primary-dark text-white shadow-primary/20; }
+        .section-padding { @apply py-24 px-6 md:px-12 lg:px-24; }
+      }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="site-navbar-root"></div>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/navbar.js?v=20260420-3"></script>
+
+    <!-- Aurora Mesh -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div class="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-primary/15 rounded-full blur-[150px]"></div>
+        <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <main class="pt-20 pb-32 md:pb-24 scroll-smooth">
+
+        <!-- Hero -->
+        <section class="section-padding min-h-[50vh] flex flex-col items-center justify-center text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-primary-dark font-bold text-sm uppercase tracking-widest">
+                <span class="material-symbols-outlined !text-sm">mail</span>
+                Reach Out
+            </div>
+            <h1 class="text-5xl lg:text-8xl font-extrabold text-slate-900 leading-[1.05]">
+                Let's <span class="text-primary italic underline decoration-primary/20 decoration-8">Connect</span>
+            </h1>
+            <p class="text-lg text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+                We'd love to hear from you. Whether it's a counselling query or insurance consultation — we're here to help.
+            </p>
+        </section>
+
+        <!-- Contact Grid -->
+        <section class="px-6 md:px-12 lg:px-24 pb-24">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-12 items-start">
+
+                <!-- Contact Info Cards (Left - 2 cols) -->
+                <div class="lg:col-span-2 space-y-6">
+
+                    <!-- Counselling -->
+                    <a href="tel:+919972875970" class="glass p-8 rounded-4xl flex items-center gap-6 hover:-translate-y-1 transition-all group block">
+                        <span class="w-16 h-16 rounded-3xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all shrink-0 shadow-lg">
+                            <span class="material-symbols-outlined !text-3xl">psychology</span>
+                        </span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg">Counselling</h3>
+                            <p class="text-primary font-bold text-sm">+91 99728 75970</p>
+                            <p class="text-slate-400 text-xs font-medium mt-1">Maria Mildred D'Souza</p>
+                        </div>
+                    </a>
+
+                    <!-- Insurance -->
+                    <a href="tel:+919945933822" class="glass p-8 rounded-4xl flex items-center gap-6 hover:-translate-y-1 transition-all group block">
+                        <span class="w-16 h-16 rounded-3xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all shrink-0 shadow-lg">
+                            <span class="material-symbols-outlined !text-3xl">shield</span>
+                        </span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg">Insurance</h3>
+                            <p class="text-secondary font-bold text-sm">+91 99459 33822</p>
+                            <p class="text-slate-400 text-xs font-medium mt-1">Sachin Suraj Noronha</p>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/919972875970" target="_blank" class="glass p-8 rounded-4xl flex items-center gap-6 hover:-translate-y-1 transition-all group block">
+                        <span class="w-16 h-16 rounded-3xl bg-green-50 text-green-600 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-all shrink-0 shadow-lg">
+                            <span class="material-symbols-outlined !text-3xl">chat</span>
+                        </span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg">WhatsApp</h3>
+                            <p class="text-green-600 font-bold text-sm">Chat Instantly</p>
+                            <p class="text-slate-400 text-xs font-medium mt-1">Quick replies guaranteed</p>
+                        </div>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="glass p-8 rounded-4xl flex items-center gap-6">
+                        <span class="w-16 h-16 rounded-3xl bg-slate-100 text-slate-400 flex items-center justify-center shrink-0 shadow-lg">
+                            <span class="material-symbols-outlined !text-3xl">location_on</span>
+                        </span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg">Location</h3>
+                            <p class="text-slate-500 font-bold text-sm"> Mangaluru</p>
+                            <p class="text-slate-400 text-xs font-medium mt-1">Karnataka, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="glass p-8 rounded-4xl flex items-center gap-6">
+                        <span class="w-16 h-16 rounded-3xl bg-primary/5 text-primary flex items-center justify-center shrink-0 shadow-lg">
+                            <span class="material-symbols-outlined !text-3xl">schedule</span>
+                        </span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg">Hours</h3>
+                            <p class="text-slate-500 font-bold text-sm">Mon - Sat: 9 AM - 7 PM</p>
+                            <p class="text-slate-400 text-xs font-medium mt-1">Sunday by appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right - 3 cols) -->
+                <div class="lg:col-span-3">
+                    <form onsubmit="contactSubmit(event)" id="contact-form" class="glass p-10 lg:p-14 rounded-[3.5rem] shadow-2xl space-y-8">
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-extrabold text-slate-900">Send us a message</h2>
+                            <p class="text-slate-500 font-medium text-sm">We typically respond within 2 hours during business hours.</p>
+                        </div>
+
+                        <!-- Service Toggle -->
+                        <div class="grid grid-cols-2 p-1.5 bg-slate-100 rounded-3xl">
+                            <button type="button" onclick="selectService(this)" data-svc="counselling" class="svc-btn py-4 rounded-2xl font-extrabold text-sm transition-all active bg-white text-primary shadow-sm">Counselling</button>
+                            <button type="button" onclick="selectService(this)" data-svc="insurance" class="svc-btn py-4 rounded-2xl font-extrabold text-sm transition-all text-slate-400 hover:text-slate-900">Insurance</button>
+                        </div>
+                        <input type="hidden" id="contact-service" value="counselling"/>
+
+                        <div class="space-y-6">
+                            <input type="text" id="contact-name" required placeholder="Full Name" class="w-full bg-white/50 border-transparent rounded-2xl px-6 py-5 focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all font-bold outline-none border-none text-slate-900 shadow-inner"/>
+                            <input type="tel" id="contact-phone" required placeholder="WhatsApp Number" class="w-full bg-white/50 border-transparent rounded-2xl px-6 py-5 focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all font-bold outline-none border-none text-slate-900 shadow-inner"/>
+                            <input type="email" id="contact-email" placeholder="Email (optional)" class="w-full bg-white/50 border-transparent rounded-2xl px-6 py-5 focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all font-bold outline-none border-none text-slate-900 shadow-inner"/>
+                            <textarea id="contact-message" rows="4" placeholder="How can we help you?" class="w-full bg-white/50 border-transparent rounded-2xl px-6 py-5 focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all font-bold outline-none border-none text-slate-900 shadow-inner resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full btn-primary-premium h-20 !text-xl shadow-2xl">
+                            Send Message
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+
+                    <!-- Success State -->
+                    <div id="contact-success" class="hidden glass p-16 rounded-[4rem] text-center space-y-8 shadow-2xl">
+                        <div class="w-24 h-24 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-green-500/30 animate-bounce">
+                            <span class="material-symbols-outlined !text-5xl">check</span>
+                        </div>
+                        <h3 class="text-4xl font-extrabold text-slate-900">Message Sent!</h3>
+                        <p class="text-slate-500 font-bold text-lg">We'll get back to you shortly. Redirecting to WhatsApp...</p>
+                        <button onclick="contactReset()" class="text-primary font-extrabold uppercase tracking-widest text-xs hover:tracking-[0.2em] transition-all">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="site-footer-root"></div>
+    <script src="assets/js/footer.js?v=20260420-5"></script>
+
+    <script>
+        function selectService(btn) {
+            document.querySelectorAll('.svc-btn').forEach(b => {
+                b.classList.remove('active', 'bg-white', 'text-primary', 'shadow-sm');
+                b.classList.add('text-slate-400');
+            });
+            btn.classList.add('active', 'bg-white', 'text-primary', 'shadow-sm');
+            btn.classList.remove('text-slate-400');
+            document.getElementById('contact-service').value = btn.dataset.svc;
+        }
+
+        function contactSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contact-form');
+            const success = document.getElementById('contact-success');
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const msg = document.getElementById('contact-message').value;
+            const svc = document.getElementById('contact-service').value;
+            const waNum = svc === 'insurance' ? '919945933822' : '919972875970';
+            const text = encodeURIComponent(`Hi! I'm ${name} (${phone}). I'm interested in your ${svc} services. ${msg}`);
+            setTimeout(() => window.open(`https://wa.me/${waNum}?text=${text}`, '_blank'), 1200);
+        }
+
+        function contactReset() {
+            document.getElementById('contact-form').classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            document.getElementById('contact-success').classList.add('hidden');
+            // Reset service toggle
+            const firstBtn = document.querySelector('.svc-btn[data-svc="counselling"]');
+            if (firstBtn) selectService(firstBtn);
+        }
+    </script>
+
+</body>
+</html>
